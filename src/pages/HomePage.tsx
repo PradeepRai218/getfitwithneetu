@@ -10,7 +10,15 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { services } from "@/data/services";
 import { testimonials } from "@/data/testimonials";
 import heroImage from "@/assets/hero-fitness.jpg";
-import trainerImage from "@/assets/trainer-neetu.jpg";
+import trainerImage from "@/assets/ASH00080.jpg";
+import galleryImage1 from "@/assets/gallery/ASH00075.jpg";
+import galleryImage2 from "@/assets/gallery/ASH00093.jpg";
+import galleryImage3 from "@/assets/gallery/ASH00100.jpg";
+import galleryImage4 from "@/assets/gallery/ASH00113.jpg";
+import galleryImage5 from "@/assets/gallery/ASH00130.jpg";
+import galleryImage6 from "@/assets/gallery/ASH00161.jpg";
+import galleryImage7 from "@/assets/gallery/ASH00166.jpg";
+import galleryImage8 from "@/assets/gallery/ASH00167.jpg";
 
 const stats = [
   { value: "500+", label: "Happy Clients" },
@@ -617,6 +625,45 @@ export default function HomePage() {
               </motion.div>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Image Gallery Section */}
+      <section className="section-padding">
+        <div className="container-custom">
+          <SectionHeader
+            badge="Gallery"
+            title="Fitness Image Gallery"
+            description="Explore our fitness journey through these inspiring moments and transformations."
+          />
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-12">
+            {[
+              { src: galleryImage1, alt: "Fitness training session" },
+              { src: galleryImage2, alt: "Workout demonstration" },
+              { src: galleryImage3, alt: "Fitness transformation" },
+              { src: galleryImage4, alt: "Training session" },
+              { src: galleryImage5, alt: "Exercise routine" },
+              { src: galleryImage6, alt: "Fitness coaching" },
+              { src: galleryImage7, alt: "Workout session" },
+              { src: galleryImage8, alt: "Training moment" },
+             
+            ].map((image, index) => (
+              <motion.div
+                key={index}
+               
+                className="group relative overflow-hidden rounded-xl aspect-square cursor-pointer"
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary/50 transition-colors duration-300 rounded-xl z-10" />
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
