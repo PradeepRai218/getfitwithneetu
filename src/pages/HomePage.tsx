@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Play, CheckCircle } from "lucide-react";
+import { ArrowRight, Play, CheckCircle, Target, TrendingUp, Award, Calendar, Map, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
 import { ServiceCard } from "@/components/ServiceCard";
@@ -226,6 +226,270 @@ export default function HomePage() {
               </Link>
             </Button>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Fitness Roadmap Section */}
+      <section className="section-padding">
+        <div className="container-custom">
+          <SectionHeader
+            badge="Your Journey"
+            title="Fitness Roadmap"
+            description="Follow this proven path to transform your body and mind. Each milestone brings you closer to your ultimate fitness goals."
+          />
+
+          <div className="relative mt-16">
+            {/* Desktop Timeline */}
+            <div className="hidden lg:block">
+              <div className="relative">
+                {/* Timeline Line */}
+                <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-primary transform -translate-x-1/2" />
+
+                {/* Roadmap Steps */}
+                <div className="space-y-24">
+                  {[
+                    {
+                      step: 1,
+                      title: "Initial Assessment",
+                      description: "We start with a comprehensive evaluation of your current fitness level, health history, and personal goals.",
+                      icon: Target,
+                      duration: "Week 1",
+                      features: ["Body composition analysis", "Fitness level testing", "Goal setting session"],
+                      position: "left",
+                    },
+                    {
+                      step: 2,
+                      title: "Custom Program Design",
+                      description: "A personalized training and nutrition plan tailored specifically to your needs, preferences, and lifestyle.",
+                      icon: Map,
+                      duration: "Week 1-2",
+                      features: ["Workout schedule", "Nutrition guidelines", "Recovery protocols"],
+                      position: "right",
+                    },
+                    {
+                      step: 3,
+                      title: "Foundation Building",
+                      description: "Establish proper form, build core strength, and develop healthy habits that will support your long-term success.",
+                      icon: TrendingUp,
+                      duration: "Week 2-4",
+                      features: ["Technique mastery", "Strength foundation", "Habit formation"],
+                      position: "left",
+                    },
+                    {
+                      step: 4,
+                      title: "Progressive Training",
+                      description: "Gradually increase intensity and complexity as your body adapts, ensuring continuous progress and results.",
+                      icon: Sparkles,
+                      duration: "Month 2-3",
+                      features: ["Advanced exercises", "Performance tracking", "Adaptive programming"],
+                      position: "right",
+                    },
+                    {
+                      step: 5,
+                      title: "Optimization & Mastery",
+                      description: "Fine-tune your approach, overcome plateaus, and achieve peak performance with expert guidance.",
+                      icon: Award,
+                      duration: "Month 4+",
+                      features: ["Plateau breaking", "Performance optimization", "Lifestyle integration"],
+                      position: "left",
+                    },
+                  ].map((milestone, index) => {
+                    const Icon = milestone.icon;
+                    const isLeft = milestone.position === "left";
+
+                    return (
+                      <motion.div
+                        key={milestone.step}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: index * 0.15 }}
+                        viewport={{ once: true }}
+                        className={`relative flex items-center ${isLeft ? "flex-row" : "flex-row-reverse"}`}
+                      >
+                        {/* Content Card */}
+                        <div className={`w-5/12 ${isLeft ? "pr-12" : "pl-12"}`}>
+                          <div className="relative group">
+                            <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-2xl opacity-0 group-hover:opacity-100 blur transition duration-300" />
+                            <div className="relative bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                              <div className="flex items-start gap-4 mb-4">
+                                <div className="flex-shrink-0 w-14 h-14 rounded-xl gradient-bg flex items-center justify-center shadow-md">
+                                  <Icon className="w-7 h-7 text-primary-foreground" />
+                                </div>
+                                <div className="flex-1">
+                                  <div className="flex items-center gap-3 mb-2">
+                                    <span className="text-xs font-semibold px-3 py-1 rounded-full bg-primary/10 text-primary">
+                                      Step {milestone.step}
+                                    </span>
+                                    <span className="text-xs text-muted-foreground flex items-center gap-1">
+                                      <Calendar className="w-3 h-3" />
+                                      {milestone.duration}
+                                    </span>
+                                  </div>
+                                  <h3 className="font-display text-xl font-bold mb-2">{milestone.title}</h3>
+                                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                                    {milestone.description}
+                                  </p>
+                                  <ul className="space-y-2">
+                                    {milestone.features.map((feature, idx) => (
+                                      <li key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
+                                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                                        <span>{feature}</span>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Timeline Node */}
+                        <div className="relative z-10 flex-shrink-0 w-16 h-16 mx-4">
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="w-16 h-16 rounded-full bg-background border-4 border-primary shadow-lg flex items-center justify-center">
+                              <div className="w-3 h-3 rounded-full bg-primary" />
+                            </div>
+                          </div>
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="w-16 h-16 rounded-full bg-primary/20 animate-ping" />
+                          </div>
+                        </div>
+
+                        {/* Empty Space */}
+                        <div className="w-5/12" />
+                      </motion.div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile/Tablet Timeline */}
+            <div className="lg:hidden">
+              <div className="relative">
+                {/* Timeline Line */}
+                <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-primary" />
+
+                {/* Roadmap Steps */}
+                <div className="space-y-8">
+                  {[
+                    {
+                      step: 1,
+                      title: "Initial Assessment",
+                      description: "We start with a comprehensive evaluation of your current fitness level, health history, and personal goals.",
+                      icon: Target,
+                      duration: "Week 1",
+                      features: ["Body composition analysis", "Fitness level testing", "Goal setting session"],
+                    },
+                    {
+                      step: 2,
+                      title: "Custom Program Design",
+                      description: "A personalized training and nutrition plan tailored specifically to your needs, preferences, and lifestyle.",
+                      icon: Map,
+                      duration: "Week 1-2",
+                      features: ["Workout schedule", "Nutrition guidelines", "Recovery protocols"],
+                    },
+                    {
+                      step: 3,
+                      title: "Foundation Building",
+                      description: "Establish proper form, build core strength, and develop healthy habits that will support your long-term success.",
+                      icon: TrendingUp,
+                      duration: "Week 2-4",
+                      features: ["Technique mastery", "Strength foundation", "Habit formation"],
+                    },
+                    {
+                      step: 4,
+                      title: "Progressive Training",
+                      description: "Gradually increase intensity and complexity as your body adapts, ensuring continuous progress and results.",
+                      icon: Sparkles,
+                      duration: "Month 2-3",
+                      features: ["Advanced exercises", "Performance tracking", "Adaptive programming"],
+                    },
+                    {
+                      step: 5,
+                      title: "Optimization & Mastery",
+                      description: "Fine-tune your approach, overcome plateaus, and achieve peak performance with expert guidance.",
+                      icon: Award,
+                      duration: "Month 4+",
+                      features: ["Plateau breaking", "Performance optimization", "Lifestyle integration"],
+                    },
+                  ].map((milestone, index) => {
+                    const Icon = milestone.icon;
+
+                    return (
+                      <motion.div
+                        key={milestone.step}
+                        initial={{ opacity: 0, x: -30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                        viewport={{ once: true }}
+                        className="relative pl-16"
+                      >
+                        {/* Timeline Node */}
+                        <div className="absolute left-0 top-0 w-12 h-12 flex items-center justify-center">
+                          <div className="relative">
+                            <div className="w-12 h-12 rounded-full bg-background border-4 border-primary shadow-md flex items-center justify-center z-10">
+                              <Icon className="w-5 h-5 text-primary" />
+                            </div>
+                            <div className="absolute inset-0 rounded-full bg-primary/20 animate-ping" />
+                          </div>
+                        </div>
+
+                        {/* Content Card */}
+                        <div className="bg-card border border-border rounded-xl p-6 shadow-lg">
+                          <div className="flex items-center gap-3 mb-3">
+                            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-primary/10 text-primary">
+                              Step {milestone.step}
+                            </span>
+                            <span className="text-xs text-muted-foreground flex items-center gap-1">
+                              <Calendar className="w-3 h-3" />
+                              {milestone.duration}
+                            </span>
+                          </div>
+                          <h3 className="font-display text-lg font-bold mb-2">{milestone.title}</h3>
+                          <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                            {milestone.description}
+                          </p>
+                          <ul className="space-y-2">
+                            {milestone.features.map((feature, idx) => (
+                              <li key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
+                                <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                                <span>{feature}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </motion.div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+
+            {/* CTA at the end */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              viewport={{ once: true }}
+              className="text-center mt-16 lg:mt-24"
+            >
+              <div className="inline-block p-8 rounded-2xl bg-gradient-to-br from-primary/10 via-primary/5 to-transparent border border-primary/20">
+                <h3 className="font-display text-2xl font-bold mb-3">
+                  Ready to Start Your Journey?
+                </h3>
+                <p className="text-muted-foreground mb-6 max-w-md">
+                  Begin your transformation today with a personalized roadmap designed just for you.
+                </p>
+                <Button asChild size="lg">
+                  <Link to="/contact">
+                    Get Started Now
+                    <ArrowRight className="w-5 h-5" />
+                  </Link>
+                </Button>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
