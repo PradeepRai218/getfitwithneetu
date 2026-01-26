@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Get Fit With Neetu - Fitness & Wellness Design System */
+
+@layer base {
+  :root {
+    /* Core brand colors - Energetic Emerald theme */
+    --background: 0 0% 100%;
+    --foreground: 160 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 160 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 10% 10%;
+
+    /* Primary - Vibrant Emerald Green */
+    --primary: 155 84% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Soft Teal */
+    --secondary: 168 50% 92%;
+    --secondary-foreground: 160 84% 25%;
+
+    /* Muted - Light gray tones */
+    --muted: 160 20% 96%;
+    --muted-foreground: 160 10% 45%;
+
+    /* Accent - Deep Teal */
+    --accent: 170 60% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 160 20% 90%;
+    --input: 160 20% 90%;
+    --ring: 155 84% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom fitness colors */
+    --emerald: 155 84% 35%;
+    --emerald-light: 155 70% 50%;
+    --emerald-dark: 155 90% 25%;
+    --teal: 170 60% 40%;
+    --dark: 160 10% 8%;
+    --dark-muted: 160 10% 15%;
+
+    /* Gradient definitions */
+    --gradient-primary: linear-gradient(135deg, hsl(155 84% 35%), hsl(170 60% 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(160 10% 8%) 0%, hsl(155 50% 15%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(160 20% 98%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px -2px hsl(155 84% 35% / 0.15);
+    --shadow-md: 0 8px 24px -8px hsl(155 84% 35% / 0.2);
+    --shadow-lg: 0 16px 48px -12px hsl(155 84% 35% / 0.25);
+    --shadow-glow: 0 0 40px -10px hsl(155 84% 35% / 0.4);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 160 10% 25%;
+    --sidebar-primary: 155 84% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 160 20% 96%;
+    --sidebar-accent-foreground: 160 10% 10%;
+    --sidebar-border: 160 20% 90%;
+    --sidebar-ring: 155 84% 35%;
+  }
+
+  .dark {
+    --background: 160 10% 6%;
+    --foreground: 0 0% 98%;
+
+    --card: 160 10% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 160 10% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 155 70% 50%;
+    --primary-foreground: 160 10% 5%;
+
+    --secondary: 160 20% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 160 15% 15%;
+    --muted-foreground: 160 10% 65%;
+
+    --accent: 170 50% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 160 15% 20%;
+    --input: 160 15% 20%;
+    --ring: 155 70% 50%;
+
+    --sidebar-background: 160 10% 8%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 155 70% 50%;
+    --sidebar-primary-foreground: 160 10% 5%;
+    --sidebar-accent: 160 15% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 160 15% 20%;
+    --sidebar-ring: 155 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .gradient-bg {
+    background-image: var(--gradient-primary);
+  }
+
+  .gradient-hero {
+    background-image: var(--gradient-hero);
+  }
+
+  .card-shadow {
+    box-shadow: var(--shadow-md);
+  }
+
+  .glow-shadow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .hover-lift:hover {
+    @apply -translate-y-1;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
