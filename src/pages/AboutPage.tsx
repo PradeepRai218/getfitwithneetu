@@ -4,7 +4,7 @@ import { ArrowRight, Award, Heart, Target, Users } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Button } from "@/components/ui/button";
-import trainerImage from "@/assets/trainer-neetu.jpg";
+import trainerImage from "@/assets/ASH00261.jpg";
 
 const values = [
   {

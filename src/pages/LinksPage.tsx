@@ -9,7 +9,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
-import trainerImage from "@/assets/trainer-neetu.jpg";
+import trainerImage from "@/assets/ASH00261.jpg";
 
 const links = [
   {
