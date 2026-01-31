@@ -5,6 +5,7 @@ import { Layout } from "@/components/layout/Layout";
 import { SectionHeader } from "@/components/SectionHeader";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { Button } from "@/components/ui/button";
+import { Seo } from "@/components/Seo";
 import { testimonials } from "@/data/testimonials";
 
 export default function TestimonialsPage() {
@@ -14,6 +15,11 @@ export default function TestimonialsPage() {
 
   return (
     <Layout>
+      <Seo
+        title="Testimonials"
+        description="Read real client stories and transformations across fitness, nutrition, and mental wellness. See what results you can expect."
+        canonicalPath="/testimonials"
+      />
       {/* Hero Section */}
       <section className="py-20 md:py-28 bg-muted/30">
         <div className="container-custom text-center">

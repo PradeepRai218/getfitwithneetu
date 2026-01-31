@@ -35,7 +35,7 @@ export function Navbar() {
                 Get Fit
               </span>
               <span className="text-xs text-muted-foreground leading-tight">
-                with Neetu
+                with Sankalp
               </span>
             </div>
           </Link>

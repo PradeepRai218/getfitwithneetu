@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import { Seo } from "@/components/Seo";
 
 export default function ContactPage() {
   const { toast } = useToast();
@@ -53,8 +54,8 @@ export default function ContactPage() {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@getfitwithneetu.com",
-      href: "mailto:hello@getfitwithneetu.com",
+      value: "hello@getfitwithSankalp.com",
+      href: "mailto:hello@getfitwithSankalp.com",
     },
     {
       icon: MapPin,
@@ -66,6 +67,11 @@ export default function ContactPage() {
 
   return (
     <Layout>
+      <Seo
+        title="Contact"
+        description="Contact Get Fit With Sankalp to book a free consultation or start your fitness, nutrition, or wellness journey. Online & offline sessions available."
+        canonicalPath="/contact"
+      />
       {/* Hero Section */}
       <section className="py-20 md:py-28 bg-muted/30">
         <div className="container-custom text-center">

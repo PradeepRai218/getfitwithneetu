@@ -4,111 +4,123 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Get Fit With Neetu - Fitness & Wellness Design System */
+/* Get Fit With Sankalp - Fitness & Wellness Design System (Orange Theme) */
 
 @layer base {
   :root {
-    /* Core brand colors - Energetic Emerald theme */
+    /* Core colors */
     --background: 0 0% 100%;
-    --foreground: 160 10% 10%;
+    --foreground: 24 20% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 160 10% 10%;
+    --card-foreground: 24 20% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 160 10% 10%;
+    --popover-foreground: 24 20% 10%;
 
-    /* Primary - Vibrant Emerald Green */
-    --primary: 155 84% 35%;
+    /* 🔥 Primary - Dark Orange */
+    --primary: 33 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Soft Teal */
-    --secondary: 168 50% 92%;
-    --secondary-foreground: 160 84% 25%;
+    /* Secondary */
+    --secondary: 33 100% 95%;
+    --secondary-foreground: 33 90% 35%;
 
-    /* Muted - Light gray tones */
-    --muted: 160 20% 96%;
-    --muted-foreground: 160 10% 45%;
+    /* Muted */
+    --muted: 24 20% 96%;
+    --muted-foreground: 24 15% 45%;
 
-    /* Accent - Deep Teal */
-    --accent: 170 60% 40%;
+    /* Accent */
+    --accent: 33 90% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 160 20% 90%;
-    --input: 160 20% 90%;
-    --ring: 155 84% 35%;
+    --border: 24 20% 90%;
+    --input: 24 20% 90%;
+    --ring: 33 100% 50%;
 
     --radius: 0.75rem;
 
-    /* Custom fitness colors */
-    --emerald: 155 84% 35%;
-    --emerald-light: 155 70% 50%;
-    --emerald-dark: 155 90% 25%;
-    --teal: 170 60% 40%;
-    --dark: 160 10% 8%;
-    --dark-muted: 160 10% 15%;
+    /* Custom brand colors */
+    --emerald: 33 100% 50%;
+    --emerald-light: 33 100% 60%;
+    --emerald-dark: 33 100% 40%;
+    --dark: 24 20% 8%;
+    --dark-muted: 24 20% 15%;
 
-    /* Gradient definitions */
-    --gradient-primary: linear-gradient(135deg, hsl(155 84% 35%), hsl(170 60% 40%));
-    --gradient-hero: linear-gradient(135deg, hsl(160 10% 8%) 0%, hsl(155 50% 15%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(160 20% 98%) 100%);
+    /* Gradients */
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(33 100% 50%),
+      hsl(28 100% 45%)
+    );
+
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(24 20% 8%) 0%,
+      hsl(33 50% 18%) 100%
+    );
+
+    --gradient-card: linear-gradient(
+      180deg,
+      hsl(0 0% 100%) 0%,
+      hsl(33 100% 98%) 100%
+    );
 
     /* Shadows */
-    --shadow-sm: 0 2px 8px -2px hsl(155 84% 35% / 0.15);
-    --shadow-md: 0 8px 24px -8px hsl(155 84% 35% / 0.2);
-    --shadow-lg: 0 16px 48px -12px hsl(155 84% 35% / 0.25);
-    --shadow-glow: 0 0 40px -10px hsl(155 84% 35% / 0.4);
+    --shadow-sm: 0 2px 8px -2px hsl(33 100% 50% / 0.15);
+    --shadow-md: 0 8px 24px -8px hsl(33 100% 50% / 0.2);
+    --shadow-lg: 0 16px 48px -12px hsl(33 100% 50% / 0.25);
+    --shadow-glow: 0 0 40px -10px hsl(33 100% 50% / 0.4);
 
+    /* Sidebar */
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 160 10% 25%;
-    --sidebar-primary: 155 84% 35%;
+    --sidebar-foreground: 24 20% 25%;
+    --sidebar-primary: 33 100% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 160 20% 96%;
-    --sidebar-accent-foreground: 160 10% 10%;
-    --sidebar-border: 160 20% 90%;
-    --sidebar-ring: 155 84% 35%;
+    --sidebar-accent: 24 20% 96%;
+    --sidebar-accent-foreground: 24 20% 10%;
+    --sidebar-border: 24 20% 90%;
+    --sidebar-ring: 33 100% 50%;
   }
 
+  /* 🌙 Dark Mode */
   .dark {
-    --background: 160 10% 6%;
+    --background: 24 20% 6%;
     --foreground: 0 0% 98%;
 
-    --card: 160 10% 10%;
+    --card: 24 20% 10%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 160 10% 10%;
+    --popover: 24 20% 10%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 155 70% 50%;
-    --primary-foreground: 160 10% 5%;
+    --primary: 33 100% 60%;
+    --primary-foreground: 24 20% 8%;
 
-    --secondary: 160 20% 15%;
+    --secondary: 24 20% 15%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 160 15% 15%;
-    --muted-foreground: 160 10% 65%;
+    --muted: 24 15% 15%;
+    --muted-foreground: 24 10% 65%;
 
-    --accent: 170 50% 45%;
+    --accent: 33 90% 55%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62% 50%;
-    --destructive-foreground: 0 0% 100%;
+    --border: 24 15% 20%;
+    --input: 24 15% 20%;
+    --ring: 33 100% 60%;
 
-    --border: 160 15% 20%;
-    --input: 160 15% 20%;
-    --ring: 155 70% 50%;
-
-    --sidebar-background: 160 10% 8%;
+    --sidebar-background: 24 20% 8%;
     --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 155 70% 50%;
-    --sidebar-primary-foreground: 160 10% 5%;
-    --sidebar-accent: 160 15% 15%;
+    --sidebar-primary: 33 100% 60%;
+    --sidebar-primary-foreground: 24 20% 8%;
+    --sidebar-accent: 24 15% 15%;
     --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 160 15% 20%;
-    --sidebar-ring: 155 70% 50%;
+    --sidebar-border: 24 15% 20%;
+    --sidebar-ring: 33 100% 60%;
   }
 }
 

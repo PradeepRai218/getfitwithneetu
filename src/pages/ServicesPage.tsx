@@ -5,11 +5,17 @@ import { Layout } from "@/components/layout/Layout";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ServiceCard } from "@/components/ServiceCard";
 import { Button } from "@/components/ui/button";
+import { Seo } from "@/components/Seo";
 import { services } from "@/data/services";
 
 export default function ServicesPage() {
   return (
     <Layout>
+      <Seo
+        title="Services"
+        description="Explore fitness training, diet & nutrition plans, mind counselling, and more. Personalized wellness services with online & offline sessions."
+        canonicalPath="/services"
+      />
       {/* Hero Section */}
       <section className="py-20 md:py-28 bg-muted/30">
         <div className="container-custom text-center">

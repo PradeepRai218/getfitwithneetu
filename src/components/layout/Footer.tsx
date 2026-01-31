@@ -33,7 +33,7 @@ export function Footer() {
                   Get Fit
                 </span>
                 <span className="text-xs text-primary-foreground/60 leading-tight">
-                  with Neetu
+                  with Sankalp
                 </span>
               </div>
             </Link>
@@ -59,7 +59,7 @@ export function Footer() {
                 <Youtube className="w-5 h-5" />
               </a>
               <a
-                href="mailto:hello@getfitwithneetu.com"
+                href="mailto:hello@getfitwithSankalp.com"
                 className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
               >
                 <Mail className="w-5 h-5" />
@@ -114,7 +114,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-primary-foreground/70">
-                  hello@getfitwithneetu.com
+                  hello@getfitwithSankalp.com
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -131,7 +131,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-primary-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-primary-foreground/60">
-              © {new Date().getFullYear()} Get Fit With Neetu. All rights reserved.
+              © {new Date().getFullYear()} Get Fit With Sankalp. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link to="/privacy" className="text-sm text-primary-foreground/60 hover:text-primary transition-colors">

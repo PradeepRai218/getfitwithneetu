@@ -7,6 +7,7 @@ import { Layout } from "@/components/layout/Layout";
 import { ServiceCard } from "@/components/ServiceCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { SectionHeader } from "@/components/SectionHeader";
+import { Seo } from "@/components/Seo";
 import { services } from "@/data/services";
 import { testimonials } from "@/data/testimonials";
 import heroImage from "@/assets/hero-fitness.jpg";
@@ -43,6 +44,11 @@ export default function HomePage() {
 
   return (
     <Layout>
+      <Seo
+        title="Home"
+        description="Achieve your fitness goals with personalized training, expert nutrition guidance, and holistic wellness support. Online & offline sessions in Mumbai."
+        canonicalPath="/"
+      />
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         {/* Background Image */}
@@ -148,7 +154,7 @@ export default function HomePage() {
               <div className="relative rounded-2xl overflow-hidden">
                 <img
                   src={trainerImage}
-                  alt="Neetu - Fitness Trainer"
+                  alt="Sankalp - Fitness Trainer"
                   className="w-full aspect-[4/5] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/60 to-transparent" />
@@ -173,7 +179,7 @@ export default function HomePage() {
                 About Me
               </span>
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
-                Hi, I'm <span className="gradient-text">Neetu</span>
+                Hi, I'm <span className="gradient-text">Sankalp</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 As a certified fitness and wellness expert, I believe in a holistic

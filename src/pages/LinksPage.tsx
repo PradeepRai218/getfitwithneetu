@@ -9,6 +9,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
+import { Seo } from "@/components/Seo";
 import trainerImage from "@/assets/ASH00261.jpg";
 
 const links = [
@@ -31,8 +32,8 @@ const links = [
   {
     icon: Instagram,
     label: "Instagram",
-    description: "@getfitwithneetu",
-    href: "https://instagram.com/getfitwithneetu",
+    description: "@getfitwithSankalp",
+    href: "https://instagram.com/getfitwithSankalp",
     internal: false,
     primary: false,
   },
@@ -40,7 +41,7 @@ const links = [
     icon: Youtube,
     label: "YouTube",
     description: "Free workout videos & tips",
-    href: "https://youtube.com/@getfitwithneetu",
+    href: "https://youtube.com/@getfitwithSankalp",
     internal: false,
     primary: false,
   },
@@ -48,15 +49,15 @@ const links = [
     icon: Github,
     label: "GitHub",
     description: "Open source projects",
-    href: "https://github.com/getfitwithneetu",
+    href: "https://github.com/getfitwithSankalp",
     internal: false,
     primary: false,
   },
   {
     icon: Mail,
     label: "Email",
-    description: "hello@getfitwithneetu.com",
-    href: "mailto:hello@getfitwithneetu.com",
+    description: "hello@getfitwithSankalp.com",
+    href: "mailto:hello@getfitwithSankalp.com",
     internal: false,
     primary: false,
   },
@@ -65,6 +66,12 @@ const links = [
 export default function LinksPage() {
   return (
     <Layout>
+      <Seo
+        title="Links"
+        description="Quick links to book a free trial, WhatsApp, Instagram, YouTube, and email for Get Fit With Sankalp."
+        canonicalPath="/links"
+        noindex
+      />
       <section className="min-h-[80vh] py-20 flex items-center justify-center">
         <div className="container-custom max-w-md">
           <motion.div
@@ -76,12 +83,12 @@ export default function LinksPage() {
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 ring-4 ring-primary/20">
               <img
                 src={trainerImage}
-                alt="Neetu"
+                alt="Sankalp"
                 className="w-full h-full object-cover"
               />
             </div>
             <h1 className="font-display text-2xl font-bold mb-2">
-              Get Fit With Neetu
+              Get Fit With Sankalp
             </h1>
             <p className="text-muted-foreground">
               Fitness • Nutrition • Wellness
@@ -159,7 +166,7 @@ export default function LinksPage() {
             transition={{ duration: 0.6, delay: 0.8 }}
             className="text-center text-sm text-muted-foreground mt-8"
           >
-            © {new Date().getFullYear()} Get Fit With Neetu
+            © {new Date().getFullYear()} Get Fit With Sankalp
           </motion.p>
         </div>
       </section>

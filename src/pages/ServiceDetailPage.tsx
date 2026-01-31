@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle, Monitor, MapPin, Clock, ArrowLeft } from "luci
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { getServiceById } from "@/data/services";
+import { Seo } from "@/components/Seo";
 
 export default function ServiceDetailPage() {
   const { serviceId } = useParams<{ serviceId: string }>();
@@ -17,6 +18,11 @@ export default function ServiceDetailPage() {
 
   return (
     <Layout>
+      <Seo
+        title={service.title}
+        description={service.shortDescription || service.fullDescription}
+        canonicalPath={`/services/${service.id}`}
+      />
       {/* Hero Section */}
       <section className="py-20 md:py-28 bg-muted/30">
         <div className="container-custom">

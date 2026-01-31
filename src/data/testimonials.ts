@@ -13,7 +13,7 @@ export const testimonials: Testimonial[] = [
     name: "Priya Sharma",
     role: "Software Engineer",
     content:
-      "Neetu's fitness program completely transformed my life. I lost 15kg in 6 months and gained so much confidence. Her approach is holistic and sustainable.",
+      "Sankalp's fitness program completely transformed my life. I lost 15kg in 6 months and gained so much confidence. Her approach is holistic and sustainable.",
     rating: 5,
     category: "fitness",
   },
@@ -40,7 +40,7 @@ export const testimonials: Testimonial[] = [
     name: "Vikram Singh",
     role: "Fitness Enthusiast",
     content:
-      "As someone who's worked with many trainers, Neetu stands out. Her knowledge, dedication, and personal attention are unmatched. Highly recommend!",
+      "As someone who's worked with many trainers, Sankalp stands out. Her knowledge, dedication, and personal attention are unmatched. Highly recommend!",
     rating: 5,
     category: "fitness",
   },
@@ -49,7 +49,7 @@ export const testimonials: Testimonial[] = [
     name: "Meera Gupta",
     role: "Doctor",
     content:
-      "The combination of fitness training and mental wellness support is exactly what I needed. I'm stronger physically and mentally. Thank you, Neetu!",
+      "The combination of fitness training and mental wellness support is exactly what I needed. I'm stronger physically and mentally. Thank you, Sankalp!",
     rating: 5,
     category: "mental",
   },
