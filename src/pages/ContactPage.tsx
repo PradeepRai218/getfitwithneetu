@@ -48,19 +48,19 @@ export default function ContactPage() {
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 98765 43210",
-      href: "tel:+919876543210",
+      value: "+91 7240154745",
+      href: "tel:+917240154745",
     },
     {
       icon: Mail,
       label: "Email",
-      value: "hello@getfitwithSankalp.com",
-      href: "mailto:hello@getfitwithSankalp.com",
+      value: "getfitwithneetu2025@gmail.com",
+      href: "mailto:getfitwithneetu2025@gmail.com",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Mumbai, Maharashtra, India",
+      value: "jodhpur (Rajasthan)",
       href: "#",
     },
   ];
