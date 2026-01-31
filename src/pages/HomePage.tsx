@@ -70,10 +70,10 @@ export default function HomePage() {
               className="text-primary-foreground"
             >
               <span className="inline-block px-4 py-2 rounded-full bg-primary/20 text-primary text-sm font-semibold mb-6">
-                Your Transformation Starts Here
+                  Your Transformation Starts Here
               </span>
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6">
-                Transform Your
+              A Promise to Transform Your
                 <span className="block gradient-text">Body & Mind</span>
               </h1>
               <p className="text-lg text-primary-foreground/80 max-w-xl mb-8 leading-relaxed">
