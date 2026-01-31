@@ -142,35 +142,7 @@ export const services: Service[] = [
     },
     ctaText: "Book Consultation",
   },
-  {
-    id: "gym-reference",
-    title: "Gym Reference",
-    shortDescription:
-      "Get recommended gym timings and guidance for peak and non-peak hours training.",
-    fullDescription:
-      "Make the most of your gym sessions with our recommended timing guide. We help you identify the best times to train based on crowd levels, equipment availability, and your personal schedule.",
-    icon: Building2,
-    benefits: [
-      "Optimal training times",
-      "Less crowded gym sessions",
-      "Better equipment access",
-      "More focused workouts",
-      "Time-efficient training",
-      "Partner gym recommendations",
-    ],
-    forWhom: [
-      "Gym newcomers",
-      "Busy professionals",
-      "Those preferring quiet training",
-      "People with flexible schedules",
-    ],
-    format: {
-      online: true,
-      offline: false,
-      duration: "Ongoing guidance",
-    },
-    ctaText: "Get Timings",
-  },
+ 
   {
     id: "free-trial",
     title: "Free Trial Masterclass",
