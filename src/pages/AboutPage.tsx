@@ -35,10 +35,11 @@ const values = [
 ];
 
 const qualifications = [
-  "Certified Personal Trainer (ACE)",
+  "Certified Personal Trainer ",
   "Nutrition & Wellness Consultant",
-  "Mind-Body Wellness Coach",
-  "Sports Psychology Certification",
+  "Emotional healing Coach",
+  "Yoga Instructors",
+  "Qualified physiotherapist",
   "CPR & First Aid Certified",
   "5+ Years Industry Experience",
 ];
@@ -61,27 +62,7 @@ const teamMembers: TeamMember[] = [
 As a certified fitness and wellness expert, I believe in a holistic approach to health. My journey began over 5 years ago, and since then, I've helped hundreds of clients transform not just their bodies, but their entire lives.
 
 I combine physical training with mental wellness support and nutrition guidance to help you achieve lasting results. Whether you're looking to lose weight, build strength, or find mental balance, I'm here to guide you every step of the way.`,
-  },
-  {
-    name: "Mr. Mohan Singh Shekhawat",
-    role: "Finance & Banking Expert",
-    image: "https://placehold.co/400x500/ea580c/ffffff?text=MSS",
-    bio: "Highly accomplished finance professional with 22 years of experience, including 14 years in the banking sector during which he has headed the Credit Portfolio of an international bank in Kenya. Mr. Shekhawat possesses a unique blend of expertise in Marketing, Business Management, Banking and Finance, with a proven track record of delivering results-driven solutions. He holds a Bachelor of Science, a Master of Business Administration (MBA) in Finance & Marketing, and is a Certified Associate of the Institute of Bankers.",
-    expertise: [
-      "Project Analysis",
-      "Financial feasibility studies and business planning",
-      "Capital investment attraction and facilitation",
-      "International financing and investment sourcing",
-      "Foreign direct investment and technology transfer",
-      "Public-Private Partnership (PPP) development",
-      "Strategic guidance and consulting for businesses and institutions",
-    ],
-    achievements: [
-      "Successfully facilitated loan/advances, investments, and capital inflow for numerous clients and corporates in Kenya",
-      "Provided professional guidance and expertise to various businesses and institutions, contributing to their growth and success",
-      "Built a strong network of international financiers, investors, and funds facilitators",
-    ],
-  },
+  }
 ];
 
 export default function AboutPage() {
@@ -106,20 +87,49 @@ export default function AboutPage() {
               </span>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                 The Story Behind
-                <span className="block gradient-text">Get Fit With Sankalp</span>
+                <span className="block gradient-text"> Fit Sankalp</span>
               </h1>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                What started as a personal passion for fitness has grown into a
-                mission to help others discover their strength, both physical and
-                mental. Get Fit With Sankalp was founded on the belief that everyone
-                deserves access to quality wellness guidance.
+               I journey started 10years back,as There was a time when I lost myself while taking care of everyone else.
+
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                My approach combines traditional fitness training with modern
-                wellness practices, creating a comprehensive system that addresses
-                the whole person – body, mind, and spirit. I've seen firsthand how
-                this integrated approach leads to lasting transformation.
+                Like many women, after marriage and motherhood, my world revolved entirely around family and responsibilities. Somewhere along the way, my own health and fitness quietly slipped to the bottom of my priority list. I began struggling with hypertension, thyroid issues, and diabetes. After delivery, I noticed a rapid decline in my energy, strength, and confidence. I felt older than my age—and that realization was frightening.
+
               </p>
+
+               <p className="text-muted-foreground leading-relaxed mb-8">
+               I once read that fitness is the greatest asset a human being can possess. That single thought changed everything. When I compared the person I once was with who I had become, I knew I had to act—before it was too late.
+
+
+              </p>
+               <p className="text-muted-foreground leading-relaxed mb-8">
+             What began as a personal effort to regain my health soon turned into a life-changing journey. Through discipline, consistency, and the right knowledge, I rebuilt my fitness along with confidence and self-belief.
+
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-8">
+           As I progressed, I realized something even deeper: I was not alone. Countless women postpone their health while balancing marriages, careers, businesses, and families—until one day they wake up and realize they have waited too long.
+
+
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-8">
+         That realization became my purpose.
+
+
+              </p>
+               <p className="text-muted-foreground leading-relaxed mb-8">
+      I pursued professional fitness education from the K11 School of Fitness Sciences, and earned multiple certification in this field. I began guiding individuals one-on-one. Over the years, I have helped 500+ individuals rediscover strength, energy, and a healthier relationship with their bodies.
+
+
+              </p>
+               <p className="text-muted-foreground leading-relaxed mb-8">
+     Today, along with a team of like-minded professionals, we work toward holistic health and wellness—addressing not only fitness, but also nutrition, mindset, emotional health, and sustainable lifestyle habits.
+
+
+
+              </p>
+
+
               <Button asChild size="lg">
                 <Link to="/contact">
                   Start Your Journey

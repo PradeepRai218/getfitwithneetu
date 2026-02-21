@@ -3,6 +3,7 @@ import {
   Dumbbell,
   Apple,
   HeartPulse,
+  Activity,
   Building2,
   Sparkles,
   BookOpen,
@@ -27,12 +28,15 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    id: "mind-counselling",
-    title: "Mind Counselling",
+    id: "just-counselling",
+    title: "Counselling",
     shortDescription:
       "Professional mental wellness support to help you overcome stress, anxiety, and achieve inner peace.",
     fullDescription:
-      "Our mind counselling sessions are designed to help you navigate life's challenges with clarity and confidence. We focus on building mental resilience, managing stress, and developing healthy coping mechanisms that last a lifetime.",
+      `Our counselling sessions are designed to gain a deep understanding of your overall health and lifestyle. We assess your current health concerns, daily routine, functional challenges, and the barriers that may be preventing you from achieving optimal health.
+    
+      These sessions also focus on key areas such as sleep quality, gut health, hormonal balance, stress levels, and lifestyle habits. Based on this holistic assessment, we provide personalized guidance and practical solutions to help restore balance, improve well-being, and support long-term health outcomes.
+     `,
     icon: Brain,
     benefits: [
       "Reduce stress and anxiety levels",
@@ -48,10 +52,10 @@ export const services: Service[] = [
       "Individuals going through life transitions",
       "Those looking to improve mental clarity",
     ],
-    format: {
+     format: {
       online: true,
-      offline: true,
-      duration: "45-60 minutes per session",
+      offline: false,
+      duration: "30-45 minutes per session",
     },
     ctaText: "Book Consultation",
   },
@@ -61,7 +65,9 @@ export const services: Service[] = [
     shortDescription:
       "Personalized workout programs designed to help you achieve your fitness goals effectively.",
     fullDescription:
-      "Transform your body and boost your energy with customized fitness training programs. Whether you're a beginner or an athlete, our training adapts to your level, goals, and schedule for maximum results.",
+      `Transform your body and enhance your energy levels with customized fitness training programs designed to meet your individual needs. 
+
+Whether you are a beginner, a senior citizen, a new mother, managing physical limitations, or an athlete, our programs are thoughtfully tailored to your body, goals, and schedule, delivering sustainable results through safe, intelligent, and empowering training.`,
     icon: Dumbbell,
     benefits: [
       "Customized workout plans",
@@ -79,8 +85,8 @@ export const services: Service[] = [
     ],
     format: {
       online: true,
-      offline: true,
-      duration: "30-60 minutes per session",
+      offline: false,
+      duration: "60 minutes per session",
     },
     ctaText: "Start Training",
   },
@@ -90,7 +96,9 @@ export const services: Service[] = [
     shortDescription:
       "Expert nutrition guidance and personalized meal plans for optimal health and wellness.",
     fullDescription:
-      "Fuel your body right with science-backed nutrition plans tailored to your lifestyle, preferences, and health goals. Our dietitian services help you develop a sustainable relationship with food.",
+      `Our personalized diet plans are created using insights from your blood tests, gut health, energy levels, mood, and sleep, ensuring a science-backed and targeted nutrition approach. 
+
+Each plan is carefully customised to suit your lifestyle, food preferences, and health goals, making it practical and sustainable.`,
     icon: Apple,
     benefits: [
       "Personalized meal plans",
@@ -108,18 +116,18 @@ export const services: Service[] = [
     ],
     format: {
       online: true,
-      offline: true,
-      duration: "30-45 minutes per session",
+      offline: false,
+      duration: "60-90 minutes per session",
     },
     ctaText: "Get Diet Plan",
   },
   {
-    id: "psychiatrist",
-    title: "Psychiatric Support",
+    id: "physiotherapy",
+    title: "Physiotherapy",
     shortDescription:
-      "Professional psychiatric guidance for comprehensive mental health care and treatment.",
+      "Professional Physiotherapy guidance for comprehensive mental health care and treatment.",
     fullDescription:
-      "Access professional psychiatric support for a range of mental health concerns. Our approach combines evidence-based treatments with compassionate care to help you achieve mental wellness.",
+      "Get expert physiotherapy support for joint health challenges and injury rehabilitation. Our evidence-based approach, combined with compassionate, personalized care, and empathy. we help you regain movement, resilience, restore mobility, reduce pain, and guide you toward complete, long-term physical fitness.”",
     icon: HeartPulse,
     benefits: [
       "Professional mental health assessment",
@@ -133,19 +141,47 @@ export const services: Service[] = [
       "Those seeking professional mental health support",
       "Individuals with mood disorders",
       "People experiencing persistent anxiety",
-      "Anyone needing psychiatric evaluation",
+      "Anyone needing Physiotherapy evaluation",
     ],
     format: {
       online: true,
-      offline: true,
-      duration: "45-60 minutes per session",
+      offline: false,
+      duration: "30-45 minutes per session",
     },
     ctaText: "Book Consultation",
   },
- 
+   {
+    id: "yoga",
+    title: "Yoga",
+    shortDescription:
+      "Professional Physiotherapy guidance for comprehensive mental health care and treatment.",
+    fullDescription:
+      "Access professional Physiotherapy support for a range of mental health concerns. Our approach combines evidence-based treatments with compassionate care to help you achieve mental wellness.",
+    icon: Activity,
+    benefits: [
+      "Professional mental health assessment",
+      "Evidence-based treatment plans",
+      "Medication guidance when needed",
+      "Ongoing support and monitoring",
+      "Holistic mental health approach",
+      "Confidential consultations",
+    ],
+    forWhom: [
+      "Those seeking professional mental health support",
+      "Individuals with mood disorders",
+      "People experiencing persistent anxiety",
+      "Anyone needing Physiotherapy evaluation",
+    ],
+    format: {
+      online: true,
+      offline: false,
+      duration: "60 minutes per session",
+    },
+    ctaText: "Book Consultation",
+  },
   {
     id: "free-trial",
-    title: "Free Trial Masterclass",
+    title: "Free Trial Session",
     shortDescription:
       "Experience our training methodology with a complimentary masterclass session.",
     fullDescription:
@@ -165,42 +201,42 @@ export const services: Service[] = [
       "People comparing fitness options",
       "Anyone ready to start their journey",
     ],
-    format: {
+     format: {
       online: true,
-      offline: true,
-      duration: "30 minutes",
+      offline: false,
+      duration: "45-60 minutes per session",
     },
     ctaText: "Join Free Trial",
   },
-  {
-    id: "free-courses",
-    title: "Free Courses",
-    shortDescription:
-      "Access our library of free fitness and wellness courses to kickstart your journey.",
-    fullDescription:
-      "Learn at your own pace with our collection of free fitness and wellness courses. From basic exercises to nutrition fundamentals, build your knowledge foundation for a healthier lifestyle.",
-    icon: BookOpen,
-    benefits: [
-      "Self-paced learning",
-      "Comprehensive video content",
-      "Exercise tutorials",
-      "Nutrition basics",
-      "Wellness tips",
-      "Lifetime access",
-    ],
-    forWhom: [
-      "Self-learners",
-      "Those wanting to learn basics",
-      "People preferring flexible learning",
-      "Anyone interested in wellness education",
-    ],
-    format: {
-      online: true,
-      offline: false,
-      duration: "Various course lengths",
-    },
-    ctaText: "Access Courses",
-  },
+  // {
+  //   id: "free-masterclass",
+  //   title: "Free Masterclass",
+  //   shortDescription:
+  //     "Access our library of free fitness and wellness courses to kickstart your journey.",
+  //   fullDescription:
+  //     "Learn at your own pace with our collection of free fitness and wellness courses. From basic exercises to nutrition fundamentals, build your knowledge foundation for a healthier lifestyle.",
+  //   icon: BookOpen,
+  //   benefits: [
+  //     "Self-paced learning",
+  //     "Comprehensive video content",
+  //     "Exercise tutorials",
+  //     "Nutrition basics",
+  //     "Wellness tips",
+  //     "Lifetime access",
+  //   ],
+  //   forWhom: [
+  //     "Self-learners",
+  //     "Those wanting to learn basics",
+  //     "People preferring flexible learning",
+  //     "Anyone interested in wellness education",
+  //   ],
+  //   format: {
+  //     online: true,
+  //     offline: false,
+  //     duration: "60-90 minutes per session",
+  //   },
+  //   ctaText: "Access Courses",
+  // },
 ];
 
 export function getServiceById(id: string): Service | undefined {

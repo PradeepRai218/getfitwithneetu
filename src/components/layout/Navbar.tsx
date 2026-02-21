@@ -32,10 +32,10 @@ export function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="font-display font-bold text-lg leading-tight">
-                Get Fit
+                 Fit Sankalp
               </span>
               <span className="text-xs text-muted-foreground leading-tight">
-                with Sankalp
+                A Promise to Transform Your Body and Soul 
               </span>
             </div>
           </Link>

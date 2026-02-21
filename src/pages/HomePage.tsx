@@ -29,10 +29,15 @@ const stats = [
 ];
 
 const highlights = [
-  "Certified Fitness & Wellness Expert",
-  "Holistic Health Approach",
+  "Personalized Fitness Training Sessions ",
+  "Customized Diet Plan",
+  
   "Personalized Programs",
-  "Online & Offline Sessions",
+  "Personalized Physio Sessions",
+   "Yoga Sessions",
+   "Personalized Emotional Healing Sessions",
+  "Online Group Sessions",
+  "Holistic Health Approach",
 ];
 
 export default function HomePage() {
@@ -74,12 +79,11 @@ export default function HomePage() {
               </span>
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6">
               A Promise to Transform Your
-                <span className="block gradient-text">Body & Mind</span>
+                <span className="block gradient-text">Body</span>
               </h1>
               <p className="text-lg text-primary-foreground/80 max-w-xl mb-8 leading-relaxed">
-                Achieve your fitness goals with personalized training, expert nutrition
-                guidance, and holistic wellness support. Your journey to a healthier,
-                stronger you begins today.
+               Achieve your fitness goals with the guidance of a personalised fitness trainer, expert nutritionist, certified yoga teacher, experienced physiotherapist, and compassionate psychiatrist—all working together for you.
+Start your journey towards a stronger, healthier, and happier life.
               </p>
 
               <div className="flex flex-wrap gap-4 mb-10">
@@ -176,22 +180,17 @@ export default function HomePage() {
               viewport={{ once: true }}
             >
               <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
-                About Me
+                About Us
               </span>
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
-                Hi, I'm <span className="gradient-text">Sankalp</span>
+                Hi, We are Fit <span className="gradient-text">Sankalp</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                As a certified fitness and wellness expert, I believe in a holistic
-                approach to health. My journey began over 5 years ago, and since then,
-                I've helped hundreds of clients transform not just their bodies, but
-                their entire lives.
+                I journey started 10years back,as There was a time when I lost myself while taking care of everyone else.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                I combine physical training with mental wellness support and nutrition
-                guidance to help you achieve lasting results. Whether you're looking
-                to lose weight, build strength, or find mental balance, I'm here to
-                guide you every step of the way.
+               Like many women, after marriage and motherhood, my world revolved entirely around family and responsibilities. Somewhere along the way, my own health and fitness quietly slipped to the bottom of my priority list. I began struggling with hypertension, thyroid issues, and diabetes. After delivery, I noticed a rapid decline in my energy, strength, and confidence. I felt older than my age—and that realization was frightening.
+
               </p>
               <Button asChild size="lg">
                 <Link to="/about">
@@ -267,8 +266,8 @@ export default function HomePage() {
                       title: "Initial Assessment",
                       description: "We start with a comprehensive evaluation of your current fitness level, health history, and personal goals.",
                       icon: Target,
-                      duration: "Week 1",
-                      features: ["Body composition analysis", "Fitness level testing", "Goal setting session"],
+                      duration: "Day 1",
+                      features: ["Blood test report analysis","Body composition analysis", "Fitness level testing", "Goal setting session"],
                       position: "left",
                     },
                     {
@@ -276,8 +275,8 @@ export default function HomePage() {
                       title: "Custom Program Design",
                       description: "A personalized training and nutrition plan tailored specifically to your needs, preferences, and lifestyle.",
                       icon: Map,
-                      duration: "Week 1-2",
-                      features: ["Workout schedule", "Nutrition guidelines", "Recovery protocols"],
+                      duration: "Day 2-4",
+                      features: ["Customised diet plan", "Customised workout schedule ", "1:1physio session if requires"],
                       position: "right",
                     },
                     {
@@ -285,7 +284,7 @@ export default function HomePage() {
                       title: "Foundation Building",
                       description: "Establish proper form, build core strength, and develop healthy habits that will support your long-term success.",
                       icon: TrendingUp,
-                      duration: "Week 2-4",
+                      duration: "Week 1-4",
                       features: ["Technique mastery", "Strength foundation", "Habit formation"],
                       position: "left",
                     },
